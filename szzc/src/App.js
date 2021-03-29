@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import http from './require/index.js'
 import './App.css'
 import { Layout, Menu, Breadcrumb, Spin} from 'antd';
@@ -97,6 +98,15 @@ class App extends Component {
                </Layout>
              </Layout>
         </Layout>
+=======
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+>>>>>>> 215ec74e6feb3b23deb5f00d3190717877fe64fb
     );
   }
 }
