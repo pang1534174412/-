@@ -1,23 +1,10 @@
-@import "antd/dist/antd.css";
+@import 'antd/dist/antd.css';
 #components-layout-demo-custom-trigger .trigger {
   padding: 0 24px;
   font-size: 18px;
   line-height: 64px;
   cursor: pointer;
   transition: color 0.3s;
-}
-
-#root {
-  height: 100%;
-}
-.zong {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.flooder {
-  flex: 1;
 }
 
 #components-layout-demo-custom-trigger .trigger:hover {
@@ -32,4 +19,24 @@
 
 .site-layout .site-layout-background {
   background: #fff;
+}
+.logo{
+	color: white;
+	margin-left: 60px;
+}
+.time{
+	color: #1890FF;
+}
+.week{
+	color: #1890FF;
+}
+.menu>a{
+	color: white;
+}
+.exit>a{
+	color: white;
+}
+.header {
+	display: flex;
+	justify-content: space-between;
 }
