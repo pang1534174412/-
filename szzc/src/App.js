@@ -28,7 +28,7 @@ class App extends Component {
   };
   componentWillMount() {
     http({
-      url: "/menu/queryNodes",
+      url: "/api/menu/queryNodes",
       method: "get",
     }).then((res) => {
       console.log(res);
