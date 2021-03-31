@@ -16,12 +16,11 @@ constructor(){
 	}
 	componentWillMount(){
 		http({
-			url:'/user/queryAll',
+			url:'/api/role/page',
 			method:'get',
-			query:{
+			params:{
 				pageNo:1,
 				pageSize:1,
-				user:'admin'
 			}
 		}).then(res=>{
 			console.log(res)

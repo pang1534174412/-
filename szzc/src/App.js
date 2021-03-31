@@ -23,7 +23,7 @@ const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
 class App extends Component {
-<<<<<<< HEAD
+
 	constructor(){
 		super();
 		this.state={
@@ -107,7 +107,7 @@ class App extends Component {
 			this.gettime()
 		},1000)
 		http({
-			url:'/menu/queryNodes',
+			url:'/api/menu/queryNodes',
 			method:'get'
 		}).then(res=>{
 			console.log(res)
@@ -118,36 +118,7 @@ class App extends Component {
 			})
 		})
 	}
-	
-=======
-  constructor() {
-    super();
-    this.state = {
-      silder: [],
-      collapsed: false,
-      s_c: [],
-      isLoading: true,
-    };
-  }
-  toggle = () => {
-    this.setState({
-      collapsed: !this.state.collapsed,
-    });
-  };
-  componentWillMount() {
-    http({
-      url: "/api/menu/queryNodes",
-      method: "get",
-    }).then((res) => {
-      console.log(res);
-      this.setState({
-        silder: res.data,
-        isLoading: false,
-        s_c: res.data.children,
-      });
-    });
-  }
->>>>>>> e41fb7320964f39f8f9f6f2b0048af769f063a0b
+
   render() {
 	  const menu = (
 	    <Menu>
